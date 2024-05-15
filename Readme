@@ -1,0 +1,32 @@
+## To run the main.py file
+    python3 main.py -i india_asns_ipv4_matchings.csv -t no
+
+    -i option for input file and -t for collecting trace
+    Thus created file will create a folder named outputs which the subsequent scripts use.
+
+## To run the auth_dns.py which gives authoritative dns servers
+    python3 auth_dns.py
+
+    This takes the inputs from the outputs folder and gives out to auth_dns_servers folder
+
+## To run the full_auth.py which gives all the dns servers
+    python3 full_auth.py
+
+    this takes inputs from auth_dns_servers folder and gives out to terminal
+
+## To run the nmap_scan.py file
+    python3 nmap_scan.py
+
+    this taked inputs from auth_dns_servers folder and gives to node_data folder 
+    this gives out all the node information mentioned in the report
+
+## To run the get_ns_servers.py file
+    python3 get_ns_servers.py -i input.csv -o soa
+
+    -i for input, -o for option in dig like soa,ds,ns..etc
+    the input.csv should contain the domains of our interest and its outputed to a primary_name_servers.csv file    
+
+## To run the dns_asn_mapping.py file
+    python3 dns_asn_mapping.py -i input.csv
+
+    the input.csv file will contain the nameservers of domains and the corresponding asn mapping will be given to dns_asn_mapping.csv file.

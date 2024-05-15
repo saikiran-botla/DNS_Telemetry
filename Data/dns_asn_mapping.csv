@@ -1,0 +1,10 @@
+domain, dns_server, ip, asns
+tn.gov.in., ns1.tn.gov.in., 218.248.29.65, 9829
+gov.in., ns1.registry.in., 37.209.192.12, 397215 397218 397219 397224 397231 397232
+agnii.gov.in., ns1.agnii.gov.in., , 
+agnii.gov.in., ns2.agnii.gov.in., 13.232.55.105, 16509
+ap.gov.in., dns2.ap.gov.in., 103.129.73.2, 137671
+ap.gov.in., dns4.ap.gov.in., 103.174.56.234, 132767
+ap.gov.in., dns5.ap.gov.in., , 
+ap.gov.in., dns3.ap.gov.in., 103.129.73.3, 137671
+ap.gov.in., dns1.ap.gov.in., 103.129.73.1, 137671
